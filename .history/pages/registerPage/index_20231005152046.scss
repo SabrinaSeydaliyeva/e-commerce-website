@@ -6,9 +6,9 @@
   main {
     display: flex;
     justify-content: space-between;
-
+    background-color: red;
     img {
-      min-height: 100vh;
+      height: 100%;
       border-radius: 0px 4px 4px 0px;
       background: #cbe4e8;
     }
@@ -44,7 +44,6 @@
 
         input {
           margin-bottom: 40px;
-          padding: 20px;
           width: 100%;
           border: none;
           border-bottom: 1px solid gray;

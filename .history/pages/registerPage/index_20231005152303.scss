@@ -44,10 +44,13 @@
 
         input {
           margin-bottom: 40px;
-          padding: 20px;
           width: 100%;
           border: none;
           border-bottom: 1px solid gray;
+        }
+        input:focus{
+          padding: 20px;
+
         }
 
         .error-msj,

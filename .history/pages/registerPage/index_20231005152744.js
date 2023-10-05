@@ -5,7 +5,7 @@ let btn = document.querySelector("button");
 let errorMsj = document.querySelector(".error-msj");
 let errorUserExist = document.querySelector(".error-user-exist");
 userExist = false;
-form.addEventListener("submit", handleRegister);
+form.addEventListener("click", handleRegister);
 
 function handleRegister(e) {
   e.preventDefault();
