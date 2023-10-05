@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+}
+.container main {
+  display: flex;
+  justify-content: space-between;
+}
+.container main .left-box {
+  width: 601px;
+  margin-top: 88px;
+  margin-left: 128px;
+}
+.container main .left-box h1 {
+  color: var(--text-color-primary, #2d2d2d);
+  font-family: Poppins;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+.container main .left-box p {
+  margin-top: 40px;
+  color: var(--text-color-tertiary, #737373);
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.container main .left-box ul {
+  margin-top: 96px;
+  width: 622px;
+  display: flex;
+  justify-content: space-between;
+}
+.container main .left-box ul li h2 {
+  color: var(--text-color-primary, #2d2d2d);
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+.container main .left-box ul li span {
+  color: var(--text-color-accent, #db6b97);
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.container main .right-box img {
+  width: 541px;
+  height: 728px;
+}/*# sourceMappingURL=index.css.map */

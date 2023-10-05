@@ -1,0 +1,93 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+  nav {
+    padding: 16px 56px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      width: 80px;
+      height: 68px;
+
+      .circle {
+        position: relative;
+        width: 64.306px;
+        height: 67.215px;
+
+        .avira {
+          position: absolute;
+          right: 24px;
+          top: 24px;
+          width: 65.762px;
+          height: 19.496px;
+        }
+      }
+    }
+
+    .nav-text {
+      width: 407px;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          a {
+            color: var(--text-color-primary, #2d2d2d);
+            text-align: right;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+          a:hover {
+            color: #db6b97;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .icon {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+    .box-1 {
+      .text-box1 {
+        padding: 24px;
+        position: absolute;
+
+        p {
+          color: var(--text-color-accent, #db6b97);
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px;
+        }
+
+        a {
+          margin-top: 4px;
+          color: var(--text-color-primary, #2d2d2d);
+          font-family: Poppins;
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px;
+        }
+        img {
+          width: 512px;
+          height: 686px;
+          position: relative;
+        }
+      }
+    }
+  }
+}

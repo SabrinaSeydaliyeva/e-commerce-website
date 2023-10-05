@@ -1,0 +1,75 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--BG, #fff);
+}
+.container main {
+  display: flex;
+  justify-content: space-between;
+}
+.container main img {
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  background: #cbe4e8;
+}
+.container main .form-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container main .form-div form {
+  width: 80%;
+}
+.container main .form-div form h1 {
+  margin-bottom: 24px;
+  color: var(--Text2, #000);
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 1.44px;
+}
+.container main .form-div form span {
+  display: block;
+  margin-bottom: 48px;
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.container main .form-div form input {
+  margin-bottom: 40px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.container main .form-div form .error-msj,
+.container main .form-div form .error-user-exist {
+  display: none;
+}
+.container main .form-div form button {
+  width: 100%;
+  color: var(--Text, #fafafa);
+  /* Title/16PX Medium */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  padding: 16px;
+  border-radius: 4px;
+  background: var(--Button2, #db4444);
+}
+.container main .form-div form p {
+  margin-top: 30px;
+  color: var(--Text2, #000);
+  /* Title/16PX Regular */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}/*# sourceMappingURL=index.css.map */

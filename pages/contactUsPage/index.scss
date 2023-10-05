@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+
+  
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px 148px 128px;
+    form {
+      width: 384px;
+      h1 {
+        color: var(--text-color-primary, #2d2d2d);
+        font-family: Poppins;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+      }
+
+      p {
+        margin-top: 8px;
+        margin-bottom: 40px;
+        color: var(--text-color-tertiary, #737373);
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      input {
+        margin-bottom: 24px;
+        width: 100%;
+        padding: 12px 0px 12px 16px;
+        border-radius: 8px;
+        border: 1px solid var(--neutrals-rule, #d2d2d2);
+        background: var(--neutrals-text-field-bg, #f6f6f6);
+      }
+
+      input:hover {
+        background-color: #db6b97;
+      }
+
+      textarea {
+        width: 384px;
+        height: 128px;
+        padding: 12px 0px 0px 16px;
+        border-radius: 8px;
+        border: 1px solid var(--neutrals-rule, #d2d2d2);
+        background: var(--neutrals-text-field-bg, #f6f6f6);
+      }
+
+      button {
+        margin-top: 32px;
+        display: flex;
+        width: 384px;
+        height: 48px;
+        padding: 9.6px 0px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        color: var(--text-color-secondary, #fff);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        background: var(--text-color-primary, #2d2d2d);
+      }
+    }
+
+    .div-page {
+      padding: 88px 318px 88px 64px;
+      background: var(--text-color-accent, #db6b97);
+
+      .info-page {
+        width: 258px;
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 40px;
+
+          li {
+            display: flex;
+            align-items: center;
+
+            svg {
+              width: 24px;
+              height: 24px;
+            }
+
+            span {
+              margin-left: 24px;
+              color: var(--text-color-secondary, #fff);
+              font-family: Poppins;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px;
+            }
+          }
+
+          .end-li {
+            width: 168px;
+            display: felx;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}
