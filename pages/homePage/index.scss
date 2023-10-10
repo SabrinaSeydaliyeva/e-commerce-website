@@ -6,6 +6,7 @@
     padding: 16px 56px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .logo {
       width: 80px;
       height: 68px;
@@ -47,10 +48,14 @@
           }
         }
       }
-
-      .icon {
+    }
+    .icon {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      p {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
       }
     }
   }
@@ -63,6 +68,12 @@
       .text-box1 {
         padding: 24px;
         position: absolute;
+
+        img {
+          width: 512px;
+          height: 686px;
+          position: relative;
+        }
 
         p {
           color: var(--text-color-accent, #db6b97);
@@ -82,10 +93,78 @@
           font-weight: 600;
           line-height: 32px;
         }
-        img {
-          width: 512px;
-          height: 686px;
-          position: relative;
+      }
+    }
+
+    .right-main {
+      .box-2 {
+        .text-box2 {
+          padding: 24px;
+          position: absolute;
+
+          img {
+            width: 776px;
+            height: 294px;
+            position: relative;
+          }
+
+          p {
+            color: var(--text-color-accent, #db6b97);
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+          }
+
+          a {
+            margin-top: 4px;
+            color: var(--text-color-primary, #2d2d2d);
+            font-family: Poppins;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+          }
+        }
+      }
+
+      .bottom-2div {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        .box-3,
+        .box-4 {
+          .text-box3,
+          .text-box4 {
+            padding: 24px;
+            position: absolute;
+
+            img {
+              width: 372px;
+              height: 360px;
+              position: relative;
+            }
+
+            p {
+              color: var(--text-color-accent, #db6b97);
+              font-family: Poppins;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 24px;
+            }
+
+            a {
+              margin-top: 4px;
+              color: var(--text-color-primary, #2d2d2d);
+              font-family: Poppins;
+              font-size: 23px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 32px;
+            }
+          }
         }
       }
     }

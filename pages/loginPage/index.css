@@ -18,7 +18,7 @@
   align-items: center;
 }
 .container main .form-div form {
-  width: 80%;
+  width: 90%;
 }
 .container main .form-div form h1 {
   margin-bottom: 24px;
@@ -47,7 +47,7 @@
   border-bottom: 1px solid gray;
 }
 .container main .form-div form .error-msj,
-.container main .form-div form .error-user-exist {
+.container main .form-div form .error-not-found {
   display: none;
 }
 .container main .form-div form button {
@@ -70,4 +70,4 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-}
+}/*# sourceMappingURL=index.css.map */

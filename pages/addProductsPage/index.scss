@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  form {
+    label {
+      width: 100%;
+
+      input {
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background: var(--W-Background, #fff);
+      }
+    }
+
+    p {
+      color: red;
+      display: none;
+    }
+
+    button {
+      padding: 16px;
+      color: #fff;
+      border-radius: 8px;
+      background: #7a5cfa;
+    }
+  }
+}

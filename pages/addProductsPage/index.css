@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container form label {
+  width: 100%;
+}
+.container form label input {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: var(--W-Background, #fff);
+}
+.container form p {
+  color: red;
+  display: none;
+}
+.container form button {
+  padding: 16px;
+  color: #fff;
+  border-radius: 8px;
+  background: #7a5cfa;
+}/*# sourceMappingURL=index.css.map */

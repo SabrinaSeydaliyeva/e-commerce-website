@@ -6,6 +6,7 @@
   padding: 16px 56px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .container nav .logo {
   width: 80px;
@@ -43,9 +44,14 @@
   color: #db6b97;
   font-size: 20px;
 }
-.container nav .nav-text .icon {
+.container nav .icon {
+  width: 200px;
   display: flex;
   justify-content: space-between;
+}
+.container nav .icon p {
+  display: flex;
+  align-items: center;
 }
 .container main {
   display: flex;
@@ -55,6 +61,11 @@
 .container main .box-1 .text-box1 {
   padding: 24px;
   position: absolute;
+}
+.container main .box-1 .text-box1 img {
+  width: 512px;
+  height: 686px;
+  position: relative;
 }
 .container main .box-1 .text-box1 p {
   color: var(--text-color-accent, #db6b97);
@@ -73,8 +84,72 @@
   font-weight: 600;
   line-height: 32px;
 }
-.container main .box-1 .text-box1 img {
-  width: 512px;
-  height: 686px;
+.container main .right-main .box-2 .text-box2 {
+  padding: 24px;
+  position: absolute;
+}
+.container main .right-main .box-2 .text-box2 img {
+  width: 776px;
+  height: 294px;
   position: relative;
 }
+.container main .right-main .box-2 .text-box2 p {
+  color: var(--text-color-accent, #db6b97);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.container main .right-main .box-2 .text-box2 a {
+  margin-top: 4px;
+  color: var(--text-color-primary, #2d2d2d);
+  font-family: Poppins;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.container main .right-main .bottom-2div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.container main .right-main .bottom-2div .box-3 .text-box3,
+.container main .right-main .bottom-2div .box-3 .text-box4,
+.container main .right-main .bottom-2div .box-4 .text-box3,
+.container main .right-main .bottom-2div .box-4 .text-box4 {
+  padding: 24px;
+  position: absolute;
+}
+.container main .right-main .bottom-2div .box-3 .text-box3 img,
+.container main .right-main .bottom-2div .box-3 .text-box4 img,
+.container main .right-main .bottom-2div .box-4 .text-box3 img,
+.container main .right-main .bottom-2div .box-4 .text-box4 img {
+  width: 372px;
+  height: 360px;
+  position: relative;
+}
+.container main .right-main .bottom-2div .box-3 .text-box3 p,
+.container main .right-main .bottom-2div .box-3 .text-box4 p,
+.container main .right-main .bottom-2div .box-4 .text-box3 p,
+.container main .right-main .bottom-2div .box-4 .text-box4 p {
+  color: var(--text-color-accent, #db6b97);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.container main .right-main .bottom-2div .box-3 .text-box3 a,
+.container main .right-main .bottom-2div .box-3 .text-box4 a,
+.container main .right-main .bottom-2div .box-4 .text-box3 a,
+.container main .right-main .bottom-2div .box-4 .text-box4 a {
+  margin-top: 4px;
+  color: var(--text-color-primary, #2d2d2d);
+  font-family: Poppins;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}/*# sourceMappingURL=index.css.map */

@@ -4,6 +4,7 @@
   background-color: white;
 }
 .container main {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 100px 0px 148px 128px;
@@ -102,3 +103,8 @@
   display: felx;
   justify-content: space-between;
 }
+.container img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}/*# sourceMappingURL=index.css.map */

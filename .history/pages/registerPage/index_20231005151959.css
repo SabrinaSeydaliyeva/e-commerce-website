@@ -8,19 +8,14 @@
   justify-content: space-between;
 }
 .container main img {
-  min-height: 100vh;
+  height: 100%;
   border-radius: 0px 4px 4px 0px;
   background: #cbe4e8;
 }
-.container main .form-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container main .form-div form {
+.container main form {
   width: 80%;
 }
-.container main .form-div form h1 {
+.container main form h1 {
   margin-bottom: 24px;
   color: var(--Text2, #000);
   font-family: Inter;
@@ -30,7 +25,7 @@
   line-height: 30px;
   letter-spacing: 1.44px;
 }
-.container main .form-div form span {
+.container main form span {
   display: block;
   margin-bottom: 48px;
   color: var(--Text2, #000);
@@ -40,18 +35,17 @@
   font-weight: 400;
   line-height: 24px;
 }
-.container main .form-div form input {
+.container main form input {
   margin-bottom: 40px;
-  padding: 20px;
   width: 100%;
   border: none;
   border-bottom: 1px solid gray;
 }
-.container main .form-div form .error-msj,
-.container main .form-div form .error-user-exist {
+.container main form .error-msj,
+.container main form .error-user-exist {
   display: none;
 }
-.container main .form-div form button {
+.container main form button {
   width: 100%;
   color: var(--Text, #fafafa);
   /* Title/16PX Medium */
@@ -64,7 +58,7 @@
   border-radius: 4px;
   background: var(--Button2, #db4444);
 }
-.container main .form-div form p {
+.container main form p {
   margin-top: 30px;
   color: var(--Text2, #000);
   /* Title/16PX Regular */
@@ -73,4 +67,4 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index_20231005151959.css.map */

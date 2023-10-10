@@ -6,6 +6,7 @@
   
 
   main {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 100px 0px 148px 128px;
@@ -114,5 +115,11 @@
         }
       }
     }
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
