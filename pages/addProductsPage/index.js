@@ -2,14 +2,17 @@ let form = document.querySelector("form");
 let idInput = document.querySelector(".id-input");
 let nameInput = document.querySelector(".name-input");
 let amountInput = document.querySelector(".amount-input");
+let infoInput = document.querySelector(".info-input");
 let errorMsj = document.querySelector("p");
+let productExist = false;
 
 form.addEventListener("submit", handleAddProducts);
-
 function handleAddProducts(e) {
   e.preventDefault();
+
   if (idInput.value && nameInput.value && amountInput.value) {
     errorMsj.style.display = "none";
+    checkProduct();
   } else {
     errorMsj.style.display = "block";
   }
@@ -27,8 +30,8 @@ function getLocalStorage() {
 }
 
 function createDataBase() {
-  let userArrays = [];
-  localStorage.setItem("products", JSON.stringify(userArrays));
+  let productArrays = [];
+  localStorage.setItem("products", JSON.stringify(productArrays));
 }
 
 function createProduct() {
@@ -36,11 +39,36 @@ function createProduct() {
     id: idInput.value,
     name: nameInput.value,
     amount: amountInput.value,
+    info: infoInput.value,
+    productCount: 1,
   };
   let dataBase = getLocalStorage();
   dataBase.push(product);
-  form.reset();
+  // form.reset();
   localStorage.setItem("products", JSON.stringify(dataBase));
 }
 
-createProduct();
+function checkProduct() {
+  let dataBase = getLocalStorage();
+
+  for (let index = 0; index < dataBase.length; index++) {
+
+    if (dataBase[index].id == idInput.value) {
+      console.log(dataBase[index]);
+
+      dataBase[index].productCount += 1;
+      console.log("var");
+      productExist = true;
+      break;
+    } else {
+      console.log("yoxdur");
+      productExist = false;
+    }
+  }
+
+  if (productExist) {
+    localStorage.setItem("products", JSON.stringify(dataBase));
+  } else {
+    createProduct();
+  }
+}

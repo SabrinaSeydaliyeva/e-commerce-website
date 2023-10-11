@@ -1,0 +1,90 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 64px 56px;
+}
+.container h1 {
+  color: var(--text-color-primary, #2d2d2d);
+  font-family: Poppins;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.container main {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.container main .men-women {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.container main .men-women ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.container main .men-women ul li {
+  position: relative;
+}
+.container main .men-women ul li img {
+  width: 384px;
+  height: 576px;
+}
+.container main .men-women ul li button {
+  position: absolute;
+  top: 496px;
+  left: 16px;
+  width: 160px;
+  padding: 16px 0px;
+  color: var(--text-color-primary, #2d2d2d);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.container main .other-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container main .other-categories ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.container main .other-categories ul li {
+  position: relative;
+}
+.container main .other-categories ul li .img-top {
+  width: 264px;
+  height: 288px;
+}
+.container main .other-categories ul li .img-bottom {
+  width: 264px;
+  height: 264px;
+}
+.container main .other-categories ul li button {
+  position: absolute;
+  top: 208px;
+  left: 16px;
+  width: 160px;
+  padding: 16px 0px;
+  color: var(--text-color-primary, #2d2d2d);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.container main .other-categories ul li .btn {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+}/*# sourceMappingURL=index.css.map */
