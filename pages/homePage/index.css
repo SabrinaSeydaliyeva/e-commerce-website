@@ -56,6 +56,7 @@
 .container main {
   display: flex;
   justify-content: space-between;
+  gap: 32x;
   padding: 64px;
 }
 .container main .box-1 .text-box1 {
@@ -83,6 +84,16 @@
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+}
+.container main .right-main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.container main .right-main .box-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
 }
 .container main .right-main .box-2 .text-box2 {
   padding: 24px;
