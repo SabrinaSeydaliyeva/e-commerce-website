@@ -4,6 +4,7 @@ let nameInput = document.querySelector(".name-input");
 let amountInput = document.querySelector(".amount-input");
 let infoInput = document.querySelector(".info-input");
 let errorMsj = document.querySelector("p");
+let imgInput = document.querySelector("input[type='file']");
 let productExist = false;
 
 form.addEventListener("submit", handleAddProducts);
@@ -29,13 +30,26 @@ function getLocalStorage() {
   }
 }
 
+// file reader
+let imageFile = "";
+imgInput.addEventListener("change", (event) => {
+  const image = event.target.files[0];
+  const reader = new FileReader();
+  reader.readAsDataURL(image);
+  reader.addEventListener("load", () => {
+    imageFile = reader.result;
+  });
+});
+
 function createDataBase() {
   let productArrays = [];
   localStorage.setItem("products", JSON.stringify(productArrays));
 }
 
 function createProduct() {
+  console.log(imageFile);
   let product = {
+    img: imageFile,
     id: idInput.value,
     name: nameInput.value,
     amount: amountInput.value,
@@ -52,7 +66,6 @@ function checkProduct() {
   let dataBase = getLocalStorage();
 
   for (let index = 0; index < dataBase.length; index++) {
-
     if (dataBase[index].id == idInput.value) {
       console.log(dataBase[index]);
 
