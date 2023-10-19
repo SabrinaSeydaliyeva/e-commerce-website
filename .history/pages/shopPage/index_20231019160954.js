@@ -66,5 +66,14 @@ function getProduct() {
 
 getProduct();
 
+function deleteProduct(element) {
+  let product = JSON.parse(localStorage.getItem("products"));
+  const newArr = product.filter((object) => {
+    return object.id != element.parentElement.querySelector("h3").innerText;
+  });
+  localStorage.setItem("products", JSON.stringify(newArr));
+  element.parentElement.remove();
 
-
+  console.log(newArr);
+}
+``;

@@ -1,9 +1,13 @@
-let main = document.querySelector("main ul");
+let main=document.querySelector("main ul")
 
-function getProduct() {
-  let product = JSON.parse(localStorage.getItem("products"));
-  for (let index = 0; index < product.length; index++) {
-    main.innerHTML += `
+
+
+function getProduct(){
+    let product=JSON.parse(localStorage.getItem("products"))
+for (let index = 0; index < product.length; index++) {
+  
+  main.innerHTML+=
+  `
   <li>
       <img src="${product[index].img}" alt="" />
       <button class="delete-btn">delete product</button>
@@ -56,15 +60,24 @@ function getProduct() {
       <span>${product[index].amount} azn</span>
       <button>Add to cart</button>
     </li>
-  `;
-  }
-
-  document.querySelectorAll(".delete-btn").forEach((element) => {
-    element.addEventListener("click", () => deleteProduct(element));
-  });
+  `
 }
 
-getProduct();
 
+        document.querySelectorAll('.delete-btn').forEach(element => {
+          element.addEventListener('click',  ()=> deleteProduct(element))
+        });
+}
 
+getProduct()
 
+function deleteProduct(element){
+  // element.parentElement.remove()
+  let product=JSON.parse(localStorage.getItem("products"))
+  const newArr = product.filter(object => {
+    return object.id != element.parentElement.querySelector('h3').innerText
+  });
+  localStorage
+
+  console.log(newArr);
+}                                         ``
