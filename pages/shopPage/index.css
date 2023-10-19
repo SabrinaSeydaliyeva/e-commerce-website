@@ -68,10 +68,10 @@
   height: 360px;
 }
 .container main ul li .position-text {
+  width: 100%;
   position: absolute;
   top: 312px;
   left: 0;
-  width: 244px;
   padding: 0 16px;
   display: flex;
   justify-content: space-between;
@@ -96,7 +96,7 @@
   font-weight: 600;
   line-height: 16px;
 }
-.container main ul li .position-text .heart svg {
+.container main ul li .position-text .heart img {
   width: 24px;
   height: 24px;
 }
@@ -140,4 +140,4 @@
   padding: 8px 80px;
   border-radius: 8px;
   background: var(--text-color-primary, #2d2d2d);
-}
+}/*# sourceMappingURL=index.css.map */

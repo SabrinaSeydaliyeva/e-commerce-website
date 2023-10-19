@@ -18,20 +18,22 @@
   gap: 32px;
 }
 .container main .men-women {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 32px;
 }
 .container main .men-women ul {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 32px;
 }
 .container main .men-women ul li {
+  width: 100%;
   position: relative;
 }
 .container main .men-women ul li img {
-  width: 384px;
+  width: 100%;
   height: 576px;
 }
 .container main .men-women ul li button {
@@ -49,6 +51,7 @@
   line-height: 24px;
 }
 .container main .other-categories {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,14 +62,15 @@
   gap: 32px;
 }
 .container main .other-categories ul li {
+  width: 100%;
   position: relative;
 }
 .container main .other-categories ul li .img-top {
-  width: 264px;
+  width: 100%;
   height: 288px;
 }
 .container main .other-categories ul li .img-bottom {
-  width: 264px;
+  width: 100%;
   height: 264px;
 }
 .container main .other-categories ul li button {
@@ -87,4 +91,4 @@
   position: absolute;
   top: 24px;
   left: 16px;
-}
+}/*# sourceMappingURL=index.css.map */
