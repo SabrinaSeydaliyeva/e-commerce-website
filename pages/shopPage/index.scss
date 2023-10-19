@@ -73,10 +73,10 @@
           height: 360px;
         }
         .position-text {
+          width: 100%;
           position: absolute;
           top: 312px;
           left: 0;
-          width: 244px;
           padding: 0 16px;
           display: flex;
           justify-content: space-between;
@@ -105,7 +105,7 @@
           }
 
           .heart {
-            svg {
+            img {
               width: 24px;
               height: 24px;
             }

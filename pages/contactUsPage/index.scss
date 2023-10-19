@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 .container {
   width: 100%;
   min-height: 100vh;
   background-color: white;
-
-  
 
   main {
     position: relative;
@@ -48,10 +48,20 @@
       textarea {
         width: 384px;
         height: 128px;
+        resize: none;
         padding: 12px 0px 0px 16px;
         border-radius: 8px;
         border: 1px solid var(--neutrals-rule, #d2d2d2);
         background: var(--neutrals-text-field-bg, #f6f6f6);
+      }
+
+      ::placeholder {
+        color: var(--text-color-tertiary, #737373);
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
       }
 
       button {
