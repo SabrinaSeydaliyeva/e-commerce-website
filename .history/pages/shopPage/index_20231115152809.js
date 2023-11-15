@@ -146,6 +146,7 @@ function addProductFunc(element) {
     element.parentElement.parentElement.querySelector("h3 span").innerText;
   let productAmount =
     element.parentElement.parentElement.querySelector("h5 span");
+  console.log(productAmount);
 
   basketCount.innerText = +basketCount.innerText + 1;
   productCount.innerText -= 1;
@@ -155,37 +156,21 @@ function addProductFunc(element) {
 }
 
 function showProduct(li) {
-  let productId= li.querySelector('h3 span')
-  let productName= li.querySelector('h2')
-  let productImg= li.querySelector('img').src
+  console.log(li);
   let basketUl = document.querySelector(".basket-ul");
-let basketList = basketUl.querySelectorAll('li')
-let productExist=false
-for (let index = 0; index < basketList.length; index++) {
-  if (basketList[index].querySelector('h3').innerText==productId.innerText) {
-    basketList[index].querySelector('p').innerText=+ basketList[index].querySelector('p').innerText+1
-    productExist=true
-    break
-  }
-  else{
-    productExist=false
-  }
-  
-}
 
-if(!productExist){
+  
+  // basketUl.append(li);
+
   basketUl.innerHTML += `
   <li>
-  <img src="${productImg}" alt="" />
+  <img src="${product[index].img}" alt="" />
 
   <div class="product-info">
-    <h2 class="product-name">${productName.innerText}</h2>
-    <h3 class="product-id">${productId.innerText}</h3>
+    <h2 class="product-name"></h2>
+    <h3 class="product-id"></h3>
   </div>
-  <p>1</p>
 
 </li>
   `;
-}
-
 }

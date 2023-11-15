@@ -162,18 +162,13 @@ function showProduct(li) {
 let basketList = basketUl.querySelectorAll('li')
 let productExist=false
 for (let index = 0; index < basketList.length; index++) {
-  if (basketList[index].querySelector('h3').innerText==productId.innerText) {
+  if (basketList[index].querySelector('h3').innerText==productId) {
     basketList[index].querySelector('p').innerText=+ basketList[index].querySelector('p').innerText+1
-    productExist=true
-    break
-  }
-  else{
-    productExist=false
+  break
+ 
   }
   
 }
-
-if(!productExist){
   basketUl.innerHTML += `
   <li>
   <img src="${productImg}" alt="" />
@@ -186,6 +181,4 @@ if(!productExist){
 
 </li>
   `;
-}
-
 }

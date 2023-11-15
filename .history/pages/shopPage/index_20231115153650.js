@@ -162,7 +162,7 @@ function showProduct(li) {
 let basketList = basketUl.querySelectorAll('li')
 let productExist=false
 for (let index = 0; index < basketList.length; index++) {
-  if (basketList[index].querySelector('h3').innerText==productId.innerText) {
+  if (basketList[index].querySelector('h3').innerText==productId) {
     basketList[index].querySelector('p').innerText=+ basketList[index].querySelector('p').innerText+1
     productExist=true
     break
@@ -174,18 +174,7 @@ for (let index = 0; index < basketList.length; index++) {
 }
 
 if(!productExist){
-  basketUl.innerHTML += `
-  <li>
-  <img src="${productImg}" alt="" />
 
-  <div class="product-info">
-    <h2 class="product-name">${productName.innerText}</h2>
-    <h3 class="product-id">${productId.innerText}</h3>
-  </div>
-  <p>1</p>
-
-</li>
-  `;
 }
 
 }
