@@ -6,7 +6,6 @@ let infoInput = document.querySelector(".info-input");
 let errorMsj = document.querySelector("p");
 let imgInput = document.querySelector("input[type='file']");
 let productExist = false;
-
 form.addEventListener("submit", handleAddProducts);
 function handleAddProducts(e) {
   e.preventDefault();

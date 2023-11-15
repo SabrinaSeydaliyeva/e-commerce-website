@@ -1,8 +1,9 @@
 let main = document.querySelector("main ul");
+let items = document.querySelector(".items");
 
 function getProduct() {
   let product = JSON.parse(localStorage.getItem("products"));
-
+  items.innerText = `${product.length} items`;
   console.log(product);
 
   for (let index = 0; index < product.length; index++) {
@@ -41,34 +42,136 @@ function getProduct() {
             </div>
 
             <h2>${product[index].name}</h2>
-            <h3># ${product[index].id}</h3>
+            <h3># <span> ${product[index].id} </span> </h3>
             <p>${product[index].info}</p>
             <h4>${product[index].productCount}</h4>
-            <span>${product[index].amount} azn</span>
-            <button>Add to cart</button>
+            <h5>$<span>${product[index].amount}</span></h5>
+
+            <div class="div-btn">
+            <button class="add-btn">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+            <button class="delete-btn" role="button">
+              <i class="fa-sharp fa-solid fa-trash"></i>
+            </button>
+          </div>
+
           </li>
+
+
+         
         `;
   }
+
   let noFavImg = document.querySelectorAll(".heart img");
 
   noFavImg.forEach((element) => {
     element.addEventListener("click", () => changeImg(element));
   });
-
-  console.log(noFavImg);
 }
 
 let isFav = false;
 
 function changeImg(element) {
-  if(isFav){
+  if (isFav) {
     element.src = "./images/no-fav.png ";
-    isFav=false
-  }
-  else{
+    isFav = false;
+  } else {
     element.src = "./images/fav.png ";
-    isFav=true
+    isFav = true;
   }
 }
 
 getProduct();
+
+// function deleteProduct(element) {
+//   let product = JSON.parse(localStorage.getItem("products"));
+//   const newArr = product.filter((object) => {
+//     return object.id != element.parentElement.querySelector("h3").innerText;
+//   });
+//   localStorage.setItem("products", JSON.stringify(newArr));
+//   element.parentElement.remove();
+
+//   console.log(newArr);
+// }
+
+// delete action
+
+let deleteBtns = document.querySelectorAll(".delete-btn");
+deleteBtns.forEach((element) => {
+  element.addEventListener("click", () => deleteProductFunc(element));
+});
+
+function deleteProductFunc(element) {
+  let productCount = element.parentElement.parentElement.querySelector("h4");
+
+  let product = JSON.parse(localStorage.getItem("products"));
+  console.log(product);
+  let id =
+    element.parentElement.parentElement.querySelector("h3 span").innerText;
+
+  if (productCount.innerText > 1) {
+    productCount.innerText -= 1;
+
+    product.forEach((element) => {
+      if (element.id == id) {
+        console.log(element);
+        element.productCount--;
+        localStorage.setItem("products", JSON.stringify(product));
+      }
+    });
+  } else {
+    element.parentElement.parentElement.remove();
+    let newArr = product.filter((object) => {
+      return object.id != id;
+    });
+    localStorage.setItem("products", JSON.stringify(newArr));
+    element.parentElement.remove();
+  }
+}
+
+// basket action
+
+let addBtns = document.querySelectorAll(".add-btn");
+addBtns.forEach((element) => {
+  element.addEventListener("click", () => addProductFunc(element));
+});
+
+let basketCount = document.querySelector(".basket-count");
+let balance = document.querySelector(".balance");
+
+function addProductFunc(element) {
+  let productCount = element.parentElement.parentElement.querySelector("h4");
+  console.log(productCount);
+  let productId =
+    element.parentElement.parentElement.querySelector("h3 span").innerText;
+  let productAmount =
+    element.parentElement.parentElement.querySelector("h5 span");
+  console.log(productAmount);
+
+  basketCount.innerText = +basketCount.innerText + 1;
+  productCount.innerText -= 1;
+
+  balance.innerText = +balance.innerText + +productAmount.innerText;
+  showProduct(element.parentElement.parentElement);
+}
+
+function showProduct(li) {
+  console.log(li);
+  let basketUl = document.querySelector(".basket-ul");
+
+  
+  // basketUl.append(li);
+
+  basketUl.innerHTML += `
+  <li>
+  <img src="${product[index].img}" alt="" />
+
+  <div class="product-info">
+    <h2 class="product-name"></h2>
+    <h3 class="product-id"></h3>
+  </div>
+
+</li>
+  `;
+}

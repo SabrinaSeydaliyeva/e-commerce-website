@@ -117,8 +117,12 @@
   font-weight: 400;
   line-height: 24px;
 }
+.container main ul li h3,
+.container main ul li h5 {
+  display: flex;
+  align-items: center;
+}
 .container main ul li span {
-  margin-top: 16px;
   display: block;
   color: var(--text-color-accent, #db6b97);
   font-family: Poppins;
@@ -127,17 +131,54 @@
   font-weight: 600;
   line-height: 24px;
 }
-.container main ul li button {
+.container main ul li .div-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.container main ul li .div-btn button i {
+  font-size: 20px;
+}
+.container main .basket-container {
   width: 100%;
-  margin-top: 16px;
-  color: var(--text-color-secondary, #fff);
+  min-height: 100vh;
+  position: relative;
+  border: 1px solid black;
+  padding: 20px;
+}
+.container main .basket-container .basket-icon {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.container main .basket-container .basket-count {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}
+.container main .basket-container h2 {
   text-align: center;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  padding: 8px 80px;
-  border-radius: 8px;
-  background: var(--text-color-primary, #2d2d2d);
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.container main .basket-container .balance {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.container main .basket-container .basket-product {
+  width: 100%;
+}
+.container main .basket-container .basket-product .basket-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container main .basket-container .basket-product .basket-ul img {
+  width: 100px;
+  height: 100px;
 }/*# sourceMappingURL=index.css.map */
